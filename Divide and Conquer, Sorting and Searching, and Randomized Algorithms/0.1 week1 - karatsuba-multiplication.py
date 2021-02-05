@@ -30,7 +30,7 @@ def karatsuba(x, y):
         q = c + d
     
         ac = karatsuba(a, c)
-        bd = karatsuba(b, c)
+        bd = karatsuba(b, d)
         pq = karatsuba(p, q)
         
         adbc = pq - ac - bd
